@@ -1,11 +1,11 @@
 {
   "author": "Fleig",
   "client_side": true,
-  "description": "An example of a stage following the Custom Stage Loader documentation.",
-  "friendly_name": "My First Stage",
+  "description": "A custom stage with a full-screen animated background.",
+  "friendly_name": "Animated Stage",
   "id": "12345",
   "link": "",
-  "name": "myFirstStage",
+  "name": "animatedStage",
   "overwrites": false,
   "priority": 1,
   "requires": [
