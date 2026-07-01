@@ -22,34 +22,21 @@ func build_stage():
 	Loader = get_tree().get_root().get_node("CSL")
 
 	Builder.data.stage_name = "Animated Stage"
-	Builder.data.stage_icon = "res://MyFirstStage/icon.png"
+	Builder.data.stage_icon = "res://YOMI_CustomStageTest/icon.png"
 
-	# Animated background (355 frames)
+	# Animated background
 	Builder.make_background("AnimatedBackground", {
-		"layer": 1,
+		"layer": 0,
 	})
 
 	Builder.make_layer("BgLayer", Builder.get_material_id("AnimatedBackground"))
 
 	Builder.make_element("BgAnimation", Builder.get_material_id("BgLayer"), {
 		"active": true,
-		"ticks_per_frame": 2,
-		"frames": Builder.make_spriteframes_animation("res://MyFirstStage/layers/background/"),
-		"position": Vector2(0, 0),
-		"h_tile": true,
+		"ticks_per_frame": 60,
+		"frames": Builder.make_spriteframes_animation("res://YOMI_CustomStageTest/layers/background/"),
+		"position": Vector2(0, -540),
 	})
 
-	# Ground
-	Builder.make_background("GroundBackground", {
-		"layer": 1,
-	})
-
-	Builder.make_layer("GroundLayer", Builder.get_material_id("GroundBackground"))
-
-	Builder.make_element("Ground", Builder.get_material_id("GroundLayer"), {
-		"frames": Builder.make_spriteframes_image("res://MyFirstStage/layers/ground.png"),
-		"position": Vector2(0, 75),
-		"h_tile": true,
-	})
 
 	Loader.add_stage(Builder.data)

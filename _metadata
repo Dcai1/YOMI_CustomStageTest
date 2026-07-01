@@ -1,11 +1,11 @@
 {
-  "author": "Fleig",
+  "author": "monz",
   "client_side": true,
-  "description": "A custom stage with a full-screen animated background.",
-  "friendly_name": "Animated Stage",
-  "id": "12345",
+  "description": "A custom stage with a full-screen animated background (placeholder text)",
+  "friendly_name": "Custom Stage Test",
+  "id": "11347",
   "link": "",
-  "name": "animatedStage",
+  "name": "animatedStageTest",
   "overwrites": false,
   "priority": 1,
   "requires": [
