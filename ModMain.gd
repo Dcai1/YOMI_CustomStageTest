@@ -27,15 +27,16 @@ func build_stage():
 	# Animated background
 	Builder.make_background("AnimatedBackground", {
 		"layer": 0,
+		"bg_color": Color("#171717"),
 	})
 
 	Builder.make_layer("BgLayer", Builder.get_material_id("AnimatedBackground"))
 
 	Builder.make_element("BgAnimation", Builder.get_material_id("BgLayer"), {
 		"active": true,
-		"ticks_per_frame": 60,
+		"ticks_per_frame": 3,
 		"frames": Builder.make_spriteframes_animation("res://YOMI_CustomStageTest/layers/background/"),
-		"position": Vector2(0, -540),
+		"position": Vector2(0, -300),
 	})
 
 
